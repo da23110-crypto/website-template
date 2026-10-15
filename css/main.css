@@ -1,1 +1,58 @@
-/*This is an external stylesheet*/
+/* General Page Styling */
+body {
+font-family: Arial, sans-serif;
+margin: 0px;
+padding: 0;
+text-align: center;
+padding-bottom: 40px;
+.column {
+    float: left;
+    width: 50%;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/* Header Styling */
+header {
+background-color: rgb(60, 135, 13);
+color: white;
+padding: 20px;
+margin-bottom: 50px;
+}
+/* Navigation Menu */
+nav {
+margin-top: 10px;
+}
+nav a {
+
+color: white;
+text-decoration: none;
+font-size: 18px;
+margin: 0 10px;
+}
+nav a:hover {
+text-decoration: underline;
+}
+/* Image and Content Styling */
+.content {
+margin: 50px;
+}
+.content img {
+width: 450px;
+border-width: 100px;
+}
+/* Footer Styling */
+footer {
+background-color: rgb(60, 135, 13);
+color: white;
+padding: 10px;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
