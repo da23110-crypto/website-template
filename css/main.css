@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* General Page Styling */
 body {
 font-family: Arial, sans-serif;
@@ -22,9 +26,9 @@ padding-bottom: 40px;
 header {
 background-color: rgb(60, 135, 13);
 color: white;
-padding: 20px;
+padding-bottom: 20px;
 margin-bottom: 50px;
-width: 100%;
+
 }
 /* Navigation Menu */
 nav {
@@ -73,30 +77,25 @@ border-width: 100px;
 footer {
 background-color: rgb(60, 135, 13);
 color: white;
-padding: 10px;
+padding-top: 10px;
 position: fixed;
 bottom: 0;
 width: 100%;
 }
-grid {
-  margin: 40px;
-  width: 100%;
 
-} 
-
-.wrapper {
+.wrapper, .wrapper_2 {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     background-color: #fff;
     color: #444;
+    margin: 30px;
   }
 
-  .box {
+  .box, .box_2 {
     background-color: white;
     color: black;
     border-radius: 5px;
-    padding: 20px;
     font-size: 150%;
     border: 1px solid black;/*Remove this line if you don't want a border around the boxes */
   }
@@ -115,4 +114,31 @@ grid {
   .d {
     grid-column: 2 ;
     grid-row: 2 ;
+  }
+  .wrapper_2 {
+    grid-template-columns: [col] 20% [col] 20% [col] 20% [col] 1fr;
+    grid-template-rows: [row] auto [row] auto [row] ;
+  }
+
+  
+  .a_2{
+    grid-column: col / span 2;
+    grid-row: row ;
+  }
+  .b_2 {
+    grid-column: col 3 / span 2 ;
+    grid-row: row ;
+  }
+  .c_2 {
+    grid-column: col ;
+    grid-row: row 2 ;
+  }
+  .d_2 {
+    grid-column: col 2 / span 3 ;
+    grid-row: row 2 ;
+  }
+
+  .e_2 {
+    grid-column: col / span 4;
+    grid-row: row 3;
   }
