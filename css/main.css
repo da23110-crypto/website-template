@@ -9,6 +9,8 @@ margin: 0px;
 padding: 0;
 text-align: center;
 padding-bottom: 40px;
+background-color: rgb(221, 229, 244);
+}
 .column {
     float: left;
     width: 50%;
@@ -21,29 +23,60 @@ padding-bottom: 40px;
     display: table;
     clear: both;
   }
-}
+
 /* Header Styling */
 header {
-background-color: rgb(60, 135, 13);
-color: white;
-padding-bottom: 20px;
-margin-bottom: 50px;
+  background-color: rgb(27, 35, 43);
+  color: white;
+  padding: 20px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center; /* Centers the image and nav-2 */
+}
 
+/* Center Logo (Row 1) */
+header img {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
 }
-/* Navigation Menu */
-nav {
-margin-top: 10px;
-}
-nav a {
 
-color: white;
-text-decoration: none;
-font-size: 18px;
-margin: 0 10px;
+/* navigation under Logo (Row 2) */
+.nav-2 {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: center;
+  margin-top: 10px;
 }
-nav a:hover {
-text-decoration: underline;
+.nav-2 a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
 }
+.nav-2 a:hover {
+  text-decoration: underline;
+}
+/* Main Top-Right Navigation */
+.nav-main {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start; /* Pushes the top-right links up to the top */
+}
+
+.nav-main a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.nav-main a:hover {
+  text-decoration: underline;
+}
+
 /* Image and Content Styling */
 .content {
 margin: 50px;
@@ -59,7 +92,7 @@ border-width: 100px;
   align-items: center;             /* Centers the content vertically */
   padding: 10px 20px;
   gap: 10px;                        /* Space between the image and text */
-  background-color: rgb(227, 225, 225);      /* Green background */
+  background-color: rgb(177, 196, 216);      /* Green background */
   color: black;              /* Text color */
   text-decoration: none;     /* Removes the default link underline */
   border-radius: 5px;        /* Rounds the corners */
@@ -75,7 +108,7 @@ border-width: 100px;
 }
 /* Footer Styling */
 footer {
-background-color: rgb(60, 135, 13);
+background-color: rgb(27, 35, 43);
 color: white;
 padding-top: 10px;
 position: fixed;
@@ -87,13 +120,14 @@ width: 100%;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #fff;
+    background-color: rgb(221, 229, 244);
     color: #444;
     margin: 30px;
   }
 
   .box, .box_2 {
-    background-color: white;
+    padding: 20px;
+    background-color: rgb(221, 229, 244);
     color: black;
     border-radius: 5px;
     font-size: 150%;
@@ -102,6 +136,12 @@ width: 100%;
 
   .a {
     grid-column: 1 / span 2;
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  align-items: center; 
+  gap: 20px;
+    
   }
   .b {
     grid-column: 3 ;
