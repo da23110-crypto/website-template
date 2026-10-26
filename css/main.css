@@ -10,6 +10,7 @@ padding: 0;
 text-align: center;
 padding-bottom: 40px;
 background-color: rgb(221, 229, 244);
+font-weight: thin;
 }
 .column {
     float: left;
@@ -55,7 +56,7 @@ header img {
   font-size: 18px;
   margin: 0 10px;
 }
-.nav-2 a:hover {
+.nav-main a:hover, .nav-2 a:hover, .nav-3 a:hover {
   text-decoration: underline;
 }
 /* Main Top-Right Navigation */
@@ -73,10 +74,19 @@ header img {
   margin: 0 10px;
 }
 
-.nav-main a:hover {
-  text-decoration: underline;
+.nav-3 {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+  align-self: start; /* Pushes the top-left links up to the top */
+  color: white;
 }
-
+.nav-3 a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
 /* Image and Content Styling */
 .content {
 margin: 50px;
@@ -131,7 +141,8 @@ width: 100%;
     color: black;
     border-radius: 5px;
     font-size: 150%;
-    border: 1px solid black;/*Remove this line if you don't want a border around the boxes */
+    /*border: 1px solid black;/*Remove this line if you don't want a border around the boxes */
+    font-size: 16px;
   }
 
   .a {
@@ -186,6 +197,7 @@ width: 100%;
   display: flex;
   /*align-items: center; */
   gap: 20px;
+  font-size: 20px;
   }
 
   .e_2 {
