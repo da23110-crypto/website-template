@@ -9,25 +9,25 @@ margin: 0px;
 padding: 0;
 text-align: center;
 padding-bottom: 40px;
-background-color: rgb(221, 229, 244);
-font-weight: thin;
+background-color: rgb(221, 229, 244);/* Light blue background color */
 }
-.column {
-    float: left;
-    width: 50%;
-    
-  }
-  
+.column {/* Float the columns side by side */
+  float: left;
+  width: 50%; 
+}
+.content {
+  margin: 20px;
+}
   /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* Header Styling */
 header {
-  background-color: rgb(27, 35, 43);
+  background-color: rgb(27, 35, 43);/*header background color */
   color: white;
   padding: 20px;
   margin-bottom: 50px;
@@ -50,13 +50,19 @@ header img {
   justify-self: center;
   margin-top: 10px;
 }
+/* Navigation Links Styling */
 .nav-2 a {
   color: white;
   text-decoration: none;
   font-size: 18px;
   margin: 0 10px;
 }
-.nav-main a:hover, .nav-2 a:hover, .nav-3 a:hover {
+.nav-main a:hover,
+.nav-2 a:hover, 
+.nav-3 a:hover,
+.nav-3 a:hover,
+.nav-3 button:hover{/* Hover effect for all navigation links */
+  color: #fff;
   text-decoration: underline;
 }
 /* Main Top-Right Navigation */
@@ -66,14 +72,14 @@ header img {
   justify-self: end;
   align-self: start; /* Pushes the top-right links up to the top */
 }
-
+/*Main Top-Right Navigation Links Styling */
 .nav-main a {
   color: white;
   text-decoration: none;
   font-size: 18px;
   margin: 0 10px;
 }
-
+/* Back Button Styling */
 .nav-3 {
   grid-column: 1;
   grid-row: 1;
@@ -81,6 +87,7 @@ header img {
   align-self: start; /* Pushes the top-left links up to the top */
   color: white;
 }
+/* Back Button Link Styling */
 .nav-3 a,
 .nav-3 button {
   background: none;
@@ -95,11 +102,6 @@ header img {
   transition: color 0.15s ease;
 }
 
-.nav-3 a:hover,
-.nav-3 button:hover {
-  color: #fff;
-  text-decoration: underline;
-}
 /* Image and Content Styling */
 .content {
 margin: 50px;
@@ -130,12 +132,12 @@ border-width: 100px;
   color: black;              /* Changes text color on hover */
 }
 .final_message {
-    margin-top: 20px;
-    font-size: 16px;
-    color: #000;
-    text-align: center;
-    margin-bottom: 40px;
-  }
+  margin-top: 20px;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+}
 /* Footer Styling */
 footer {
 background-color: rgb(27, 35, 43);
@@ -147,56 +149,54 @@ width: 100%;
 }
 
 .wrapper, .wrapper_2 {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: rgb(221, 229, 244);
-    color: #444;
-    margin: 30px;
-  }
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(221, 229, 244);
+  color: #444;
+  margin: 30px;
+}
 
-  .box, .box_2 {
-    padding: 20px;
-    background-color: rgb(221, 229, 244);
-    color: black;
-    border-radius: 5px;
-    font-size: 150%;
-    /*border: 1px solid black;/*Remove this line if you don't want a border around the boxes */
-    font-size: 16px;
-  }
+.box, .box_2 {
+  padding: 20px;
+  background-color: rgb(221, 229, 244);
+  color: black;
+  border-radius: 5px;
+  font-size: 16px;
+}
 
-  .a {
-    grid-column: 1 / span 2;
+.a {
+  grid-column: 1 / span 2;
   text-align: left;
   padding: 20px;
-  display: flex;
-  /*align-items: center; */
+    display: flex;
+    /*align-items: center; */
   gap: 20px;
     
   }
-  .b {
-    grid-column: 3 ;
-    grid-row: 1 / span 2;
+.b {
+  grid-column: 3 ;
+  grid-row: 1 / span 2;
+}
+.c {
+  grid-column: 1 ;
+  grid-row: 2 ;
+}
+.d {
+  grid-column: 2 ;
+  grid-row: 2 ;
   }
-  .c {
-    grid-column: 1 ;
-    grid-row: 2 ;
-  }
-  .d {
-    grid-column: 2 ;
-    grid-row: 2 ;
-  }
-  .wrapper_2 {
-    grid-template-columns: [col] 20% [col] 20% [col] 20% [col] 1fr;
-    grid-template-rows: [row] auto [row] auto [row] ;
-  }
+.wrapper_2 {
+  grid-template-columns: [col] 20% [col] 20% [col] 20% [col] 1fr;
+  grid-template-rows: [row] auto [row] auto [row] ;
+}
 
   
-  .a_2{
-    grid-column: col / span 2;
-    grid-row: row ;
-  }
-  .b_2 {
+.a_2{
+  grid-column: col / span 2;
+  grid-row: row ;
+}
+.b_2 {
   grid-column: col 3 / span 2;
   grid-row: row;
   display: flex;
@@ -206,21 +206,21 @@ width: 100%;
   gap: 20px;
   text-align: right;            
 }
-  .c_2 {
-    grid-column: col ;
-    grid-row: row 2 ;
-  }
-  .d_2 {
-    grid-column: col 2 / span 3;
+.c_2 {
+  grid-column: col ;
+  grid-row: row 2 ;
+}
+.d_2 {
+  grid-column: col 2 / span 3;
   text-align: left;
   padding: 20px;
   display: flex;
   /*align-items: center; */
   gap: 20px;
   font-size: 20px;
-  }
+}
 
-  .e_2 {
-    grid-column: col / span 4;
-    grid-row: row 3;
-  }
+.e_2 {
+  grid-column: col / span 4;
+  grid-row: row 3;
+}

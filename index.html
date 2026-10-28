@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- size of webpage on opening-->
     <title>Home | Maunga Club</title> <!-- Title shown on the browser tab -->
    <link rel="stylesheet" href="css/main.css"> <!-- Link to CSS file -->
 </head>
@@ -18,54 +18,63 @@
         <a href="kereru.html">Kereru</a>
     </nav>
 
-    <!-- Main top-right navigation -->
+<!-- Main top-right navigation -->
     <nav class="nav-main">
         <a href="index.html">Home</a> |
         <a href="sign_up_form.html">Sign up</a> 
     </nav>
+
+<!-- Back button navigation -->
     <nav class="nav-3">
-        <a href="#" onclick="history.back(); return false;">&larr; Back</a>
+        <button type="button" onclick="history.back();" class="back-btn"><!--Got this back button off google and adapted it-->
+            &larr; Back
+        </button>
     </nav>
 </header>
-
+<!-- Main content section -->
+    <!-- Welcome message and description of the Maunga Club -->
     <p class="welcome/ description">Welcome to Maunga Club, a place for all your outdoor adventures!<br>
     Perfect for weekend getaways, all bookings run<br> from Friday to Sunday, providing shared accommodation for groups ranging from <br> 6 to 40 people per chalet. With our three chalets situated right on the slopes, members<br> enjoy seamless ski-in and ski-out access to 550 hectares of terrain and New Zealand's longest ski and<br> snowboard season. Join the Maunga Club today to gain access to our<br> mountain cabins and experience the ultimate snow getaway!</p>
     
     <p> 
         We offer three different chalets, each with its own unique features and amenities.<br> Our chalets are designed to provide a comfortable and cozy environment for our members, ensuring<br> a memorable stay in the mountains. Whether you're looking for a relaxing retreat<br> or an action-packed adventure, Maunga Club has something for everyone.</p>
-    
+    <!-- Links to the three chalets with images and descriptions -->
+     <!-- Kakapo Chalet -->
     <a href="kakapo.html" class="button-link btn">
         <img src="pics/kakapo/cabin_exterior-resize.jpg" alt="Kakapo chalet thumbnail" width="200">
         <br> 
-        <h2>Kakapo Chalet</h2>
-        <li style="text-align: left;">Largest chalet</li>
-        <li style="text-align: left;">Sleeps up to 40 people</li>
+        <h2>Kakapo Chalet</h2><!-- Title of the chalet-->
+        <li style="text-align: left;">Largest chalet</li><!-- Internal styling-->
+        <li style="text-align: left;">Sleeps up to 40 people</li><!-- List of features-->
         <li style="text-align: left;">Large kitchen/ dining</li>
         <li style="text-align: left;">perfect for large groups</li>
     </a> 
+    <!-- Pukeko Chalet -->
     <a href="pukeko.html" class="button-link btn">
         <img src="pics/pukeko/chalet_exterior_thumb.jpg" alt="Pukeko chalet thumbnail" width="200">
         <br> 
-        <h2>Pukeko Chalet</h2>
-        <li style="text-align: left;">Medium sized chalet</li>
-        <li style="text-align: left;">Sleeps up to 21 people</li>
+        <h2>Pukeko Chalet</h2><!-- Title of the chalet-->
+        <li style="text-align: left;">Medium sized chalet</li><!-- Internal styling-->
+        <li style="text-align: left;">Sleeps up to 21 people</li><!-- List of features-->
         <li style="text-align: left;">Large kitchen/ dining area</li>
         <li style="text-align: left;">Perfect for large families</li>
     </a> 
+    <!-- Kereru Chalet -->
     <a href="kereru.html" class="button-link btn">
         <img src="pics/kereru/cabin_exterior.jpg" alt="Kereru chalet thumbnail" width="200">
         <br> 
-        <h2>Kereru Chalet</h2>
-        <li style="text-align: left;">Smallest chalet</li>
-        <li style="text-align: left;">Sleeps up to 6 people</li>
+        <h2>Kereru Chalet</h2><!-- Title of the chalet-->
+        <li style="text-align: left;">Smallest chalet</li><!-- Internal styling-->
+        <li style="text-align: left;">Sleeps up to 6 people</li><!-- List of features-->
         <li style="text-align: left;">Cozy kitchen/ dining</li>
         <li style="text-align: left;">Perfect for small families</li>
     </a> 
+    <!-- Final message and contact information -->
     <div class ="final_message">
-        <p>To learn more about each chalet, click on the image or title.</p>
-        <p>To hire a chalet, please contact us at maungaclub@maungaclub.maungaclub.</p>
+        <p>To learn more about each chalet, click on the image or title.</p><!-- explanation on how to use the links -->
+        <p>To hire a chalet, please contact us at maungaclub@maungaclub.maungaclub.</p><!-- information on how to book chalet-->
     </div>
-   
+<!-- Footer Section -->
 <footer>
    <p>Email: maungaclub@maungaclub.maungaclub</p>
    </footer>
